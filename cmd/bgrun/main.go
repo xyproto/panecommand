@@ -18,6 +18,9 @@ func main() {
 		return
 	}
 
+	fmt.Println("hi")
+	time.Sleep(1 * time.Second)
+
 	done := make(chan struct{})
 	go func() {
 		if err := pc.Run(); err != nil {
